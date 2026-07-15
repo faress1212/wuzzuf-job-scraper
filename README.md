@@ -41,7 +41,7 @@ wuzzuf-job-scraper/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/wuzzuf-job-scraper.git
+git clone https://github.com/<faress1212>/wuzzuf-job-scraper.git
 cd wuzzuf-job-scraper
 ```
 
