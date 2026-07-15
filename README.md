@@ -2,7 +2,7 @@
 
 A web scraping project that extracts job listings (title, company, location, and link) from [Wuzzuf.net](https://wuzzuf.net), Egypt's leading online job search platform, using `requests` and `BeautifulSoup`.
 
-## ⚠️ Important: Selectors May Need Updating
+## Important: Selectors May Need Updating
 
 Wuzzuf, like most modern websites, uses **CSS-in-JS**, meaning its CSS class names (e.g. `css-lptxge`) are auto-generated at build time and can change whenever the site is redeployed — sometimes without any change to the visible page.
 
@@ -14,7 +14,7 @@ Wuzzuf, like most modern websites, uses **CSS-in-JS**, meaning its CSS class nam
 
 This is normal scraper maintenance, not a bug in the code logic itself — the parsing logic was tested against mock HTML with the same structure Wuzzuf used at the time this project was built, and works correctly as long as the selectors match the live site.
 
-## 📌 Project Overview
+## Project Overview
 
 - Fetch and parse Wuzzuf job search results pages
 - Extract job title, company, location, and application link
@@ -22,7 +22,7 @@ This is normal scraper maintenance, not a bug in the code logic itself — the p
 - Clean the scraped data (deduplicate, drop failed parses, build full URLs)
 - Export to CSV for further analysis
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 wuzzuf-job-scraper/
@@ -37,7 +37,7 @@ wuzzuf-job-scraper/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -62,19 +62,19 @@ Or explore step-by-step in the notebook:
 jupyter notebook notebooks/wuzzuf_job_scraper.ipynb
 ```
 
-## ⚖️ Responsible Scraping
+## Responsible Scraping
 
 - Check [wuzzuf.net/robots.txt](https://wuzzuf.net/robots.txt) and Wuzzuf's Terms of Service before scraping at scale.
 - The scraper includes a delay (`time.sleep`) between page requests by default — don't remove this, as hammering a site with rapid requests can get your IP blocked or cause harm to the service.
 - This project is for educational/personal data analysis purposes.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - Requests (HTTP requests)
 - BeautifulSoup4 (HTML parsing)
 - Pandas (data handling)
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE). Note that scraped data belongs to its original source (Wuzzuf/employers) — respect the site's terms of use.
